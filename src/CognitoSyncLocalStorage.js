@@ -339,7 +339,7 @@ AWS.CognitoSyncManager.LocalStorage = (function() {
 
         };
 
-        request(null, null);
+        request(null, null); // lgtm Just passing some extra null
 
     };
 
