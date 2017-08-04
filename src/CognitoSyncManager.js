@@ -118,7 +118,7 @@ if (AWS === undefined) {
             };
 
             if (datasets.length > 0) {
-                request(datasets.shift(), callback);
+                request(datasets.shift(), callback); // lgtm
             } else {
                 callback(null, []);
             }
