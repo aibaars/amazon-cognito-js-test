@@ -33,7 +33,7 @@ AWS.CognitoSyncManager.DatasetMetadata = (function(){
         // Assign object.
         this.datasetName = metadata.DatasetName || '';
         this.creationDate = new Date(metadata.CreationDate) || new Date(); // lgtm[ js/trivial-conditional ]
-        this.lastModifiedDate = new Date(metadata.LastModifiedDate) || new Date();
+        this.lastModifiedDate = new Date(metadata.LastModifiedDate) || new Date(); // lgtm[  ]
         this.lastModifiedBy = metadata.LastModifiedBy || '';
         this.dataStorage = metadata.DataStorage || 0;
         this.recordCount = metadata.NumRecords || 0;
